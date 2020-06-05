@@ -75,3 +75,73 @@ Services
 - Failure to perform
 - Provider lock-in
 - Provider lock-out
+
+### Third-Party Security Services, Third-Party Assessment, and Monitoring
+An organization may determine that certain services (either operational or related to security) are outside the organization’s core competency, instead contracting with a third party to provide these services. You should be aware of the various services that might be related to IT and information security, such as:
+
+- Network management
+- Network monitoring (either/both performance/security)
+- Identity and access management
+- Cryptographic key management
+- Antimalware
+- Threat detection/monitoring (business intelligence)
+Typically, both parties in this kind of arrangement (and the service providers and the organization contracting third-party providers) protect themselves through the codification and use of a service-level agreement (SLA).
+
+The SLA describes—objectively, specifically, and numerically—the terms of service the provider will deliver on a regular basis. It is the part of the contract that distinctly allows both parties to determine whether the provider has met the needs of the customer organization. The customer organization will have to determine the service level requirements (the basic performance metrics used to determine if the SLA is met) and the minimum security requirements necessary to receive the service with sufficient security protections to meet the organization’s risk appetite and any compliance requirements.
+
+Risk and Security Control Frameworks
+Organizations often use frameworks as tools to describe, model, and document risk to the organization, performance requirements, and security controls. You should be familiar with the risk and security frameworks commonly associated with the industry, including the following:
+
+National Institute of Standards and Technology --
+
+NIST SP 800-37: Guide for applying Risk Management Framework (RMF)
+NIST SP 800-53: Catalog of security controls for use in conjunction with the RMF
+NIST FIPS 140-2: Cryptographic module approval list
+NIST FIPS 199: Standards for security categorization
+International Standards Organization
+
+ISO 27000 series: International Organization for Standardization (ISO) guidance on information security, particularly:
+ISO 27001: The information security management system (ISMS)
+ISO 27002: Security controls list for use with the ISMS
+COBIT: ISACA framework for security management and governance
+CSA STAR: The Cloud Security Alliance Security Trust, Assurance, and Risk program for cloud service providers
+FedRAMP: U.S. federal government framework for cloud service providers
+PCI-DSS: The Payment Card Industry Data Security Standard
+
+### Develop, Document, and Implement Security Policy, Standards, Procedures, and Guidelines
+We discussed governance earlier in the topic—the methods and resources used by the organization to make decisions (and security governance, for decisions made about security). This section deals with the documented aspects of security governance: the security policies, standards, procedures, and guidelines.
+
+You should be familiar with these terms and concepts, for both certification and practical use:
+- Security policy: The organization’s strategic security direction and mandates, published and signed by senior management
+- Security standards: Minimum target levels and security best practices; may be created within the organization and imposed on all business units or may be taken from external creators (such as standards bodies like ISO, PCI, or SANS)
+- Security procedures: Specific instructions for performing security-related tasks
+- Security guidelines: Recommendations (not mandates) for security best practices; usually from sources external to the organization
+
+### Securely Provisioning Resources
+In order to secure the organization’s assets, it is imperative to know what assets the organization has, as well as information about those assets (such as location, responsibility, status, and so on). This is the purpose of the asset inventory, or a tool/method for tracking all assets within the organization. This should be done for all hardware, software, and media assets.
+
+One of the aspects the inventory should include is the identification and tracking of the asset owner. This is the party/person/office within the organization that is explicitly responsible for maintaining, operating, and storing the asset properly and securely, in compliance with appropriate guidance. The asset owner should have direct managerial and operational control of the asset, as well as accept the liability for its disposition. In many cases, the asset owner will be responsible not only for a given IT asset but for the data that resides on it.
+
+### Understand and Participate in Change Management Processes
+You will also need a process for constantly updating/maintaining the inventory, to monitor and reflect continual changes to the environment. There are two terms associated with this effort:
+
+- Configuration management: The process, method, and resources used to determine baseline settings and version of assets in the inventory
+- Change management: The process, method, and resources used to modify the configuration of assets in the inventory
+
+In many organizations, there is one overall CM effort, which incorporates both concepts. For all IT-related assets, version control is crucial; the organization needs to know which updates/upgrades have been applied to which assets and which settings have been modified, in order to create uniformity throughout the environment and have a documented known-good template for expanding the environment and for use in audit/compliance efforts. Moreover, specifically for software, licensing of the asset is important, and tracking and maintaining licenses should be an element of the inventory.
+
+You should also be aware of the security practitioner’s role in the CM process; as a security subject matter expert, you will be called on to review suggested/requested changes to the environment, identify potential risks, and make recommendations to senior management regarding whether the proposed modifications are reasonable and/or will need additional protections.
+
+Apply Resource Protection Techniques
+You should be familiar with standard practices for protecting assets; these include controls that mitigate against attempts to damage, take, or exploit assets. For instance, the organization should deploy security controls to prevent physical threats to assets, such as fences, locked doors, stickers/tags, temperature/humidity management, and so on.
+
+When controls are used to prevent the asset from being misused or exploited as an avenue of attack, it is called hardening. Asset hardening often entails use of a configuration baseline and techniques such as:
+- Removing default accounts (particularly default administrator accounts)
+- Removing unnecessary services
+- Installing antimalware/intrusion prevention/egress monitoring/additional access control tools
+- Increasing logging
+
+### Ensure Appropriate Asset Retention
+You should be familiar with the need to preserve and maintain assets (in particular, data) for an appropriate length of time. This duration may vary from asset to asset within the organization and varies widely from organization to organization (as well as industry to industry and jurisdiction to jurisdiction). Asset retention durations can be assigned by statutory mandate, contractual obligation, internal policy, and/or industry standard.
+
+The organization must determine every asset’s retention duration and ensure the asset is appropriately protected until that time is reached. Often, retention periods exceed useful production purpose of an asset, and assets will be stored in an archive until the retention period is reached. At the end of the retention period (and the end of the information lifecycle), the organization must dispose of the asset in a secure manner.
